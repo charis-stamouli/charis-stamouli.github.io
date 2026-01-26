@@ -19,12 +19,7 @@
     .w3-sidenav a,.w3-sidenav h4 { padding:20px; }
     .w3-navbar a { padding-top:12px !important; padding-bottom:12px !important; }
 
-    /* Match Home page accent */
-    .soft-bold {
-      font-weight: 500;
-      color: #1c3e82;
-    }
-
+    /* Paper title style (matches Home page blue) */
     a.pub-link {
       color: #1c3e82;
       text-decoration: none;
@@ -39,7 +34,7 @@
 
 <body>
 
-<!-- Navbar -->
+<!-- NAVBAR -->
 <ul class="w3-navbar w3-theme w3-top w3-left-align w3-large" style="z-index:4;">
   <li class="w3-opennav w3-right" onclick="w3_open()">
     <a class="w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)">
@@ -52,7 +47,7 @@
   <li class="w3-hide-small w3-right" style="margin:10px;">Charis Stamouli</li>
 </ul>
 
-<!-- Sidenav -->
+<!-- SIDENAV -->
 <nav id="mySidenav" class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-right"
      style="z-index:3;width:0px; position: fixed; right: 0;">
   <a href="./index.html" class="w3-hover-black">Home</a>
@@ -60,9 +55,8 @@
   <a href="./Publications.html" class="w3-hover-black">Publications</a>
 </nav>
 
-<!-- Main content -->
+<!-- MAIN CONTENT -->
 <div class="w3-main" style="margin-left:250px;margin-top: 70px;">
-
   <div class="w3-row w3-padding-8">
     <div class="w3-twothird w3-container">
 
@@ -70,101 +64,103 @@
 
       <p>
         For an up-to-date list of publications, visit my
-        <a href="https://scholar.google.com/citations?user=MhDtVHsAAAAJ&hl=en" target="_blank" class="soft-bold" style="text-decoration:none;">
+        <a href="https://scholar.google.com/citations?user=MhDtVHsAAAAJ&hl=en"
+           target="_blank" style="font-weight:500;color:#1c3e82;text-decoration:none;">
           Google Scholar page
         </a>.
       </p>
 
-      <h4 class="w3-text-black"><a id="Conferences">Conference Papers</a></h4>
+      <h4>Conference Papers</h4>
       <ul>
         <li>
-          V. Tassopoulou*, <span class="soft-bold">C. Stamouli</span>*,
+          V. Tassopoulou*, <strong>C. Stamouli</strong>*,
           H. Shou, G. J. Pappas, and C. Davatzikos,
           <a href="https://arxiv.org/abs/2511.13911" target="_blank" class="pub-link">
             Uncertainty-Calibrated Prediction of Randomly-Timed Biomarker Trajectories with Conformal Bands
           </a>,
-          Conference on Neural Information Processing Systems, 2025.
+          NeurIPS, 2025.
         </li>
 
         <li>
-          <span class="soft-bold">C. Stamouli</span>, A. Tsiamis, M. Morari, and G. J. Pappas,
+          <strong>C. Stamouli</strong>, A. Tsiamis, M. Morari, and G. J. Pappas,
           <a href="https://arxiv.org/abs/2504.10461" target="_blank" class="pub-link">
             Layered Multirate Control of Constrained Linear Systems
           </a>,
-          IEEE Conference on Decision and Control, 2025. To appear.
+          IEEE CDC, 2025.
         </li>
 
         <li>
-          <span class="soft-bold">C. Stamouli</span>, I. Ziemann, and G. J. Pappas,
+          <strong>C. Stamouli</strong>, I. Ziemann, and G. J. Pappas,
           <a href="https://arxiv.org/abs/2404.07937" target="_blank" class="pub-link">
             Rate-Optimal Non-Asymptotics for the Quadratic Prediction Error Method
           </a>,
-          IEEE Conference on Decision and Control, 2024.
+          IEEE CDC, 2024.
         </li>
 
         <li>
-          <span class="soft-bold">C. Stamouli</span>, L. Lindemann, and G. J. Pappas,
+          <strong>C. Stamouli</strong>, L. Lindemann, and G. J. Pappas,
           <a href="https://arxiv.org/abs/2405.10875" target="_blank" class="pub-link">
             Recursively Feasible Shrinking-Horizon MPC in Dynamic Environments with Conformal Prediction Guarantees
           </a>,
-          Conference on Learning for Dynamics and Control, 2024.
+          L4DC, 2024.
         </li>
 
         <li>
-          <span class="soft-bold">C. Stamouli</span>, E. Chatzipantazis, and G. J. Pappas,
+          <strong>C. Stamouli</strong>, E. Chatzipantazis, and G. J. Pappas,
           <a href="https://arxiv.org/abs/2309.16527" target="_blank" class="pub-link">
             Structural Risk Minimization for Learning Nonlinear Dynamics
           </a>,
-          IEEE American Control Conference, 2024. <strong>Best Student Paper Award</strong>.
+          ACC, 2024. <strong>Best Student Paper Award</strong>.
         </li>
 
         <li>
-          <span class="soft-bold">C. Stamouli</span>, A. Tsiamis, M. Morari, and G. J. Pappas,
+          <strong>C. Stamouli</strong>, A. Tsiamis, M. Morari, and G. J. Pappas,
           <a href="https://arxiv.org/abs/2204.01107" target="_blank" class="pub-link">
             Adaptive Stochastic MPC under Unknown Noise Distribution
           </a>,
-          Conference on Learning for Dynamics and Control, 2022.
+          L4DC, 2022.
         </li>
 
         <li>
-          <span class="soft-bold">C. J. Stamouli</span>, C. P. Bechlioulis, and K. J. Kyriakopoulos,
+          <strong>C. J. Stamouli</strong>, C. P. Bechlioulis, and K. J. Kyriakopoulos,
           <a href="https://ieeexplore.ieee.org/abstract/document/9030197" target="_blank" class="pub-link">
             Robust Dynamic Average Consensus with Prescribed Performance
           </a>,
-          IEEE Conference on Decision and Control, 2019.
+          IEEE CDC, 2019.
         </li>
       </ul>
 
-      <h4 class="w3-text-black"><a id="Journals">Journal Papers</a></h4>
+      <h4>Journal Papers</h4>
       <ul>
         <li>
-          <span class="soft-bold">C. Stamouli</span>*, L. F. Toso*, A. Tsiamis, G. J. Pappas, and J. Anderson,
+          <strong>C. Stamouli</strong>*, L. F. Toso*, A. Tsiamis, G. J. Pappas, and J. Anderson,
           <a href="https://arxiv.org/abs/2509.19266" target="_blank" class="pub-link">
             Policy Gradient Bounds in Multitask LQR
           </a>,
-          IEEE Control Systems Letters, 2025. To appear.
+          IEEE Control Systems Letters, 2025.
         </li>
 
         <li>
-          <span class="soft-bold">C. J. Stamouli</span>, C. P. Bechlioulis, and K. J. Kyriakopoulos,
-          <a href="https://www.sciencedirect.com/science/article/pii/S0005109822003624" target="_blank" class="pub-link">
+          <strong>C. J. Stamouli</strong>, C. P. Bechlioulis, and K. J. Kyriakopoulos,
+          <a href="https://www.sciencedirect.com/science/article/pii/S0005109822003624"
+             target="_blank" class="pub-link">
             Robust Dynamic Average Consensus with Prescribed Transient and Steady State Performance
           </a>,
           Automatica, 2022.
         </li>
 
         <li>
-          <span class="soft-bold">C. J. Stamouli</span>, C. P. Bechlioulis, and K. J. Kyriakopoulos,
-          <a href="https://ieeexplore.ieee.org/abstract/document/8977390" target="_blank" class="pub-link">
+          <strong>C. J. Stamouli</strong>, C. P. Bechlioulis, and K. J. Kyriakopoulos,
+          <a href="https://ieeexplore.ieee.org/abstract/document/8977390"
+             target="_blank" class="pub-link">
             Multi-agent Formation Control based on Distributed Estimation with Prescribed Performance
           </a>,
-          IEEE Robotics and Automation Letters, 2020. Presented at ICRA 2020.
+          IEEE Robotics and Automation Letters, 2020.
         </li>
       </ul>
 
     </div>
   </div>
-
 </div>
 
 <!-- JS -->
