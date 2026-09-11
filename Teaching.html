@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Teaching - Charis Stamouli</title>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" charset="UTF-8">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+  <style>
+    html,body,h1,h2,h3,h4,h5,h6 {
+      margin: 2% auto;
+      background: #f2f2f2;
+      font-family: "Roboto", sans-serif;
+    }
+
+    .w3-sidenav a,.w3-sidenav h4 { padding:20px; }
+    .w3-navbar a { padding-top:12px !important; padding-bottom:12px !important; }
+
+    a.course-link {
+      color: #1c3e82;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a.course-link:hover {
+      text-decoration: underline;
+    }
+
+    .course-entry {
+      margin-bottom: 34px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #d9d9d9;
+    }
+
+    .course-entry:last-child {
+      border-bottom: none;
+    }
+
+    .course-title {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .course-info {
+      color: #555;
+      margin-bottom: 14px;
+    }
+
+    .teaching-role {
+      font-style: italic;
+      margin-bottom: 12px;
+    }
+
+    .teaching-contribution {
+      color: #444;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<ul class="w3-navbar w3-top w3-left-align w3-large"
+    style="z-index:4; background:#f2f2f2;">
+
+  <li class="w3-opennav w3-right" onclick="w3_open()">
+    <a class="w3-hover-white w3-large w3-theme-l1"
+       href="javascript:void(0)">
+      <i class="fa fa-bars"></i>
+    </a>
+  </li>
+
+  <li class="w3-hide-small">
+    <a href="./index.html" class="w3-hover-white">Home</a>
+  </li>
+
+  <li class="w3-hide-small">
+    <a href="./Docs/CV.pdf" class="w3-hover-white">CV</a>
+  </li>
+
+  <li class="w3-hide-small">
+    <a href="./Publications.html" class="w3-hover-white">Publications</a>
+  </li>
+
+  <li class="w3-hide-small">
+    <a href="./Teaching.html" class="w3-hover-white">Teaching</a>
+  </li>
+
+  <li class="w3-hide-small w3-right" style="margin:10px;">
+    Charis Stamouli
+  </li>
+
+</ul>
+
+
+<!-- Side navigation -->
+<nav id="mySidenav"
+     class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-right"
+     style="z-index:3;width:0px; position: fixed; right: 0;">
+
+  <a href="./index.html" class="w3-hover-black">Home</a>
+  <a href="./Docs/CV.pdf" class="w3-hover-black">CV</a>
+  <a href="./Publications.html" class="w3-hover-black">Publications</a>
+  <a href="./Teaching.html" class="w3-hover-black">Teaching</a>
+
+</nav>
+
+
+<!-- Main content -->
+<div class="w3-main" style="margin-left:250px;margin-top:70px;">
+
+  <div class="w3-row w3-padding-8">
+
+    <div class="w3-twothird w3-container">
+
+      <h1 class="w3-text" style="color:Black">Teaching</h1>
+
+      <p>
+        My teaching experience spans undergraduate and graduate courses
+        in machine learning, control systems, and engineering.
+      </p>
+
+
+      <!-- Machine Learning -->
+
+      <div class="course-entry">
+
+        <h3 class="course-title">
+          <a href="https://catalog.upenn.edu/courses/cis/"
+             target="_blank"
+             class="course-link">
+            CIS 5200 Machine Learning
+          </a>
+        </h3>
+
+        <div class="course-info">
+          University of Pennsylvania · Spring 2022 · Undergraduate
+        </div>
+
+        <div class="teaching-role">
+          Teaching Assistant
+        </div>
+
+        <p>
+          This course covers the foundations of statistical machine learning,
+          with an emphasis on probabilistic and statistical methods for
+          prediction and clustering in high dimensions. Topics include
+          regression, support vector machines, dimensionality reduction,
+          expectation-maximization, hidden Markov models, and deep learning.
+        </p>
+
+        <p class="teaching-contribution">
+          <b>Teaching contributions:</b>
+          Designed homework and examination materials, taught classes,
+          and held office hours.
+        </p>
+
+      </div>
+
+
+      <!-- Linear Systems Theory -->
+
+      <div class="course-entry">
+
+        <h3 class="course-title">
+          <a href="https://catalog.upenn.edu/courses/ese/"
+             target="_blank"
+             class="course-link">
+            ESE 5000 Linear Systems Theory
+          </a>
+        </h3>
+
+        <div class="course-info">
+          University of Pennsylvania · Fall 2021 · Graduate
+        </div>
+
+        <div class="teaching-role">
+          Teaching Assistant
+        </div>
+
+        <p>
+          This graduate-level course focuses on continuous and discrete
+          linear systems, including state-space representations, stability,
+          controllability, observability, realization, and feedback
+          stabilization.
+        </p>
+
+        <p class="teaching-contribution">
+          <b>Teaching contributions:</b>
+          Designed homework and examination materials, taught classes,
+          and held office hours.
+        </p>
+
+      </div>
+
+
+      <!-- Programming Techniques -->
+
+      <div class="course-entry">
+
+        <h3 class="course-title">
+          <a href="https://www.ece.ntua.gr/"
+             target="_blank"
+             class="course-link">
+            Programming Techniques
+          </a>
+        </h3>
+
+        <div class="course-info">
+          National Technical University of Athens · Spring 2017 · Undergraduate
+        </div>
+
+        <div class="teaching-role">
+          Teaching Assistant
+        </div>
+
+        <p>
+          An undergraduate programming course covering fundamental
+          programming concepts and hands-on programming through laboratory
+          exercises.
+        </p>
+
+        <p class="teaching-contribution">
+          <b>Teaching contributions:</b>
+          Assisted students during laboratory sessions.
+        </p>
+
+      </div>
+
+
+      <h3 class="w3-text-black">Teaching Interests</h3>
+
+      <p>
+        Control Systems · Machine Learning · Learning-Based Control ·
+        Robotics · Optimization
+      </p>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<script>
+
+var mySidenav = document.getElementById("mySidenav");
+
+function w3_open() {
+  if (mySidenav.style.display === 'block') {
+    mySidenav.style.display = "none";
+    mySidenav.style.width = "0%";
+  } else {
+    mySidenav.style.display = "block";
+    mySidenav.style.width = "200px";
+  }
+}
+
+function w3_close() {
+  mySidenav.style.display = "none";
+  mySidenav.style.width = "0%";
+}
+
+</script>
+
+</body>
+</html>
