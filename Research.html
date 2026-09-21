@@ -18,67 +18,31 @@
 
     .w3-sidenav a,.w3-sidenav h4 { padding:20px; }
     .w3-navbar a { padding-top:12px !important; padding-bottom:12px !important; }
-
-    a.research-title {
-      color: #1c3e82;
-      text-decoration: none;
-      font-weight: 600;
-    }
   </style>
 </head>
 
 <body>
 
 <!-- Navbar -->
-<ul class="w3-navbar w3-top w3-left-align w3-large"
-    style="z-index:4; background:#f2f2f2;">
-
+<ul class="w3-navbar w3-top w3-left-align w3-large" style="z-index:4; background:#f2f2f2;">
   <li class="w3-opennav w3-right" onclick="w3_open()">
-    <a class="w3-hover-white w3-large w3-theme-l1"
-       href="javascript:void(0)">
-      <i class="fa fa-bars"></i>
-    </a>
+    <a class="w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
   </li>
-
-  <li class="w3-hide-small">
-    <a href="./index.html" class="w3-hover-white">Home</a>
-  </li>
-
-  <li class="w3-hide-small">
-    <a href="./Docs/CV.pdf" class="w3-hover-white">CV</a>
-  </li>
-
-  <li class="w3-hide-small">
-    <a href="./Research.html" class="w3-hover-white">Research</a>
-  </li>
-
-  <li class="w3-hide-small">
-    <a href="./Publications.html" class="w3-hover-white">Publications</a>
-  </li>
-
-  <li class="w3-hide-small">
-    <a href="./Teaching.html" class="w3-hover-white">Teaching</a>
-  </li>
-
-  <li class="w3-hide-small w3-right" style="margin:10px;">
-    Charis Stamouli
-  </li>
+  <li class="w3-hide-small"><a href="./index.html" class="w3-hover-white">Home</a></li>
+  <li class="w3-hide-small"><a href="./Docs/CV.pdf" class="w3-hover-white">CV</a></li>
+  <li class="w3-hide-small"><a href="./Research.html" class="w3-hover-white">Research</a></li>
+  <li class="w3-hide-small"><a href="./Publications.html" class="w3-hover-white">Publications</a></li>
+  <li class="w3-hide-small"><a href="./Teaching.html" class="w3-hover-white">Teaching</a></li>
+  <li class="w3-hide-small w3-right" style="margin:10px;">Charis Stamouli</li>
 </ul>
 
-
-<!-- Side navigation -->
-<nav id="mySidenav"
-     class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-right"
-     style="z-index:3;width:0px; position: fixed; right: 0;">
-
+<nav id="mySidenav" class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-right" style="z-index:3;width:0px; position: fixed; right: 0;">
   <a href="./index.html" class="w3-hover-black">Home</a>
   <a href="./Docs/CV.pdf" class="w3-hover-black">CV</a>
   <a href="./Research.html" class="w3-hover-black">Research</a>
   <a href="./Publications.html" class="w3-hover-black">Publications</a>
   <a href="./Teaching.html" class="w3-hover-black">Teaching</a>
-
 </nav>
-
 
 <!-- Main content -->
 <div class="w3-main" style="margin-left:250px;margin-top:70px;">
@@ -92,28 +56,34 @@
         Recent advances in machine learning have unlocked remarkable capabilities for autonomous systems, enabling them to perform increasingly complex tasks in the physical world. As learning-enabled control becomes increasingly prevalent in the physical world, the risks associated with its failures increase correspondingly. My research focuses on the control architectures and statistical foundations of learning-enabled autonomy, with the goal of developing principled approaches for reliable deployment of learning-enabled systems in the physical world.
       </p>
 
-      <h3>
-        <a href="#" class="research-title" onclick="return false;">Layered Control Architectures</a>
-      </h3>
+      <h3><span class="research-title">Layered Control Architectures</span></h3>
 
       <p>
-        As autonomous systems become more complex, their components increasingly operate at different timescales and levels of abstraction, using models of different fidelity. Layered control provides a framework for organizing these components and coordinating decisions across different levels of an autonomous system. My research explores principled approaches to layered control, including the co-design of layers across heterogeneous dynamics, timescales, constraints, and observations, and the use of learning to synthesize lower-level policies while preserving guarantees on their behavior.
+        The increasing scale and complexity of modern autonomous systems introduce significant challenges in control design. Such systems increasingly combine different layers of functionality, from perception and language to planning and control, with components operating at different timescales and relying on models of varying fidelity. Layered control provides a powerful framework for organizing these components and coordinating decisions across different levels of an autonomous system.
       </p>
 
-      <h3>
-        <a href="#" class="research-title" onclick="return false;">Multitask Control Architectures</a>
-      </h3>
-
       <p>
-        Data collection from physical systems can be expensive or risky, making it important to exploit structure shared across related systems and tasks. Multitask control provides a framework for learning a common controller across heterogeneous systems and objectives. My research explores system-theoretic approaches to characterizing task similarity and heterogeneity, and to understanding their implications for the performance, stability, generalization, and data efficiency of shared policies.
+        A key focus is the co-design of different layers so that their interactions preserve the desired behavior of the overall system. My research explores principled approaches to layered control that address this challenge across heterogeneous dynamics, timescales, and models.
       </p>
 
-      <h3>
-        <a href="#" class="research-title" onclick="return false;">Statistical Learning for Dynamics and Control</a>
-      </h3>
+      <h3><span class="research-title">Statistical Learning for Dynamics and Control</span></h3>
 
       <p>
-        Learning from finite data is fundamental to autonomy, but learned models and predictions are inevitably uncertain. This uncertainty can propagate through the control loop and compromise safety and performance. My research explores statistical foundations for learning dynamics and control, with a focus on quantifying uncertainty in learned models and predictions and translating these estimates into rigorous guarantees for prediction, constraint satisfaction, and safety.
+        Learning-enabled controllers involve uncertain components, and such uncertainty can propagate through the control loop and compromise safety and performance. This motivates approaches for quantifying uncertainty and leveraging uncertainty estimates to establish theoretical guarantees. Statistical learning provides a foundation for understanding the reliability of learned components in dynamical systems and control.
+      </p>
+
+      <p>
+        A key focus is quantifying uncertainty in learned dynamical components and connecting it to the safety, performance, and reliability of learning-enabled control. My research explores statistical foundations for learning dynamics and control, with a focus on characterizing uncertainty in learned models and predictions.
+      </p>
+
+      <h3><span class="research-title">Multitask Control Architectures</span></h3>
+
+      <p>
+        Data collection from physical systems can often be expensive or risky in practice, limiting the capabilities and scalability of learning-enabled controllers. At the same time, related systems and control tasks may exhibit shared structure that can be exploited during learning. Multitask control provides a framework for leveraging such shared structure by learning a common controller across related control tasks.
+      </p>
+
+      <p>
+        A key focus is understanding when a common controller can effectively transfer across tasks and how task heterogeneity affects the benefits of learning jointly. My research explores system-theoretic approaches to characterizing task similarity and heterogeneity and their implications for multitask control.
       </p>
 
     </div>
@@ -121,23 +91,22 @@
 
 </div>
 
-
 <script>
 var mySidenav = document.getElementById("mySidenav");
 
 function w3_open() {
-  if (mySidenav.style.display === 'block') {
-    mySidenav.style.display = "none";
-    mySidenav.style.width = "0%";
-  } else {
-    mySidenav.style.display = "block";
-    mySidenav.style.width = "200px";
-  }
+    if (mySidenav.style.display === 'block') {
+        mySidenav.style.display = "none";
+        mySidenav.style.width = "0%";
+    } else {
+        mySidenav.style.display = "block";
+        mySidenav.style.width = "200px";
+    }
 }
 
 function w3_close() {
-  mySidenav.style.display = "none";
-  mySidenav.style.width = "0%";
+    mySidenav.style.display = "none";
+    mySidenav.style.width = "0%";
 }
 </script>
 
